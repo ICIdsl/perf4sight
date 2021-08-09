@@ -1,0 +1,3 @@
+[submodule "pruners"]
+	path = pruners
+	url = https://github.com/ICIdsl/pruners.git
