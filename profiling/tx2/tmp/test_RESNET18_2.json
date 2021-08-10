@@ -1,0 +1,1 @@
+{"RESNET18": {"test_var": "memory", "bs": 2, "dataset": "imagenet", "net_name": "resnet18", "exec_stage": "training", "model": "/home/ar4414/pytorch_training/src/adapt/perf_model/models/pruned/imagenet/random_pruning/resnet18_0.py"}, "gpu": 2}

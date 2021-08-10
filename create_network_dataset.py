@@ -9,12 +9,6 @@ import subprocess
 
 import torch
 
-# get current directory and append to path
-# this allows everything inside pruners to access anything else 
-# within pruners regardless of where pruners is
-currDir = os.path.dirname(os.path.realpath(__file__))
-sys.path.append(currDir)
-
 import pruners.base as pruningSrc
 from pruners.vgg import VGGPruning
 from pruners.resnet import ResNetPruning
