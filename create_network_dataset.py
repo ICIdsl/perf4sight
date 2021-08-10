@@ -37,6 +37,9 @@ def get_model(params, network):
         params.arch = 'resnet'
         params.depth = depth
         model = module.__dict__['resnet'](num_classes=1000, pretrained=False, depth=int(depth))
+    elif 'googlenet' in network:
+        params.arch = network
+        model = module.__dict__[network](num_classes=1000, pretrained=False, aux_logits=False)
     else:
         params.arch = network
         model = module.__dict__[network](num_classes=1000, pretrained=False)
