@@ -22,7 +22,7 @@ def get_model(params, network):
 #{{{
     modelfile = params.pruner['model_desc_dir']
     
-    path = modelfile.replace('/','.')[:-1]
+    path = modelfile.replace('/','.')
     module = importlib.import_module(path)
     
     if 'resnet' in network:
