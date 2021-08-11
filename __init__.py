@@ -7,6 +7,8 @@ import sys
 currDir = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(currDir)
 
-from create_network_dataset import create_dataset
-from fingerprinting.fingerprint import fingerprint_device
 from profiling.network_wise_profiling import profile_network
+if os.getenv('PROFILING') is None:
+    from create_network_dataset import create_dataset
+    from fingerprinting.fingerprint import fingerprint_device
+
