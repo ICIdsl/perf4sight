@@ -11,5 +11,12 @@ Please refer to https://github.com/ICIdsl/performance_modelling.git on how to us
 ## Citation
 If you reference this work in a publication, please cite it through the following citation:
 ```
-Add citation
+@misc{rajagopal2021perf4sight,
+      title={perf4sight: A toolflow to model CNN training performance on Edge GPUs}, 
+      author={Aditya Rajagopal and Christos-Savvas Bouganis},
+      year={2021},
+      eprint={2108.05580},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
 ```
